@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MathFarm</string>
+    <string name="title_activity_counting_video">Counting_video</string>
 </resources>

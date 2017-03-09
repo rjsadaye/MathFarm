@@ -13,7 +13,7 @@
     <ImageButton
         android:layout_width="175dp"
         android:layout_height="120dp"
-        android:id="@+id/imageButton"
+        android:id="@+id/countingicon"
         android:layout_marginLeft="42dp"
         android:layout_marginStart="42dp"
         android:adjustViewBounds="true"
@@ -27,25 +27,27 @@
     <ImageButton
         android:layout_width="175dp"
         android:layout_height="120dp"
-        android:id="@+id/imageButton2"
+        android:id="@+id/shapesicon"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:src="@drawable/shapesicon"
         android:cropToPadding="false"
         android:adjustViewBounds="true"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"
+        android:clickable="true" />
 
     <ImageView
         android:layout_width="175dp"
         android:layout_height="120dp"
-        android:id="@+id/imageView"
-        android:src="@drawable/plusminusicon"
+        android:id="@+id/addicon"
         android:scaleType="fitXY"
         android:cropToPadding="true"
-        android:layout_toEndOf="@+id/imageButton2"
+        android:layout_toEndOf="@+id/shapesicon"
         android:adjustViewBounds="true"
-        android:layout_alignTop="@+id/imageButton"
-        android:layout_toRightOf="@+id/imageButton2" />
+        android:layout_alignTop="@+id/countingicon"
+        android:layout_toRightOf="@+id/shapesicon"
+        android:src="@drawable/plusminusicon"
+        android:clickable="true" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -54,4 +56,30 @@
         android:src="@drawable/titletext"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/settingsicon"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/settingsicon"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:background="#00ffffff"
+        android:clickable="true" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/volumeicon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        android:background="#00ffffff"
+        android:src="@drawable/soundonicon"
+        android:clickable="true"
+        android:longClickable="true" />
 </RelativeLayout>
