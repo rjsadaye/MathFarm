@@ -13,6 +13,10 @@
         android:theme="@style/AppTheme"
         tools:node="replace"
         tools:overrideLibrary="android.support.v7.appcompat">
+        <service
+            android:name=".MusicService"
+            android:enabled="true" />
+
         <activity
             android:name=".Home"
             android:screenOrientation="landscape">
@@ -22,6 +26,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Shapevideo"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".VideoPlayer" />
     </application>
 
 </manifest>
