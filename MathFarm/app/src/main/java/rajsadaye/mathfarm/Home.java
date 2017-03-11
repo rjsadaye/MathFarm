@@ -78,7 +78,7 @@ public class Home extends Activity {
         mServ.stopMusic();
         doUnbindService();
         super.onDestroy();
-        activities.remove(this);
+
 
     }
     public static void finishAll()
@@ -88,7 +88,7 @@ public class Home extends Activity {
     }
     public void call1(View view)
     {
-        Intent intent = new Intent(Home.this,Shapevideo.class);
+        Intent intent = new Intent(Home.this,VideoPlayer2.class);
         startActivity(intent);
 
     }
