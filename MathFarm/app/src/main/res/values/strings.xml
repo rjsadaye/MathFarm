@@ -1,6 +1,4 @@
 <resources>
     <string name="app_name">MathFarm</string>
-    <string name="title_activity_counting_video">Counting_video</string>
-    <string name="title_activity_shapevideo">shapevideo</string>
-    <string name="title_activity_countingquestion">Countingquestion</string>
+    <string name="title_activity_shapesoptions">Shapesoptions</string>
 </resources>

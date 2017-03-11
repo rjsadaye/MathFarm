@@ -12,8 +12,8 @@ import android.widget.MediaController;
 import android.widget.VideoView;
 
 public class VideoPlayer extends Activity {
-    private VideoView videoView;
     String extStorageDirectory;
+    private VideoView videoView;
     protected static final int PLAY = 0x101;
     protected static final int STOP = 0x102;
     protected static final int PAUSE = 0x103;
@@ -33,8 +33,7 @@ public class VideoPlayer extends Activity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_video_player);
-        final VideoView videoView =
-                (VideoView) findViewById(R.id.videoView1);
+         videoView = (VideoView) findViewById(R.id.videoView1);
         String uriPath="android.resource://rajsadaye.mathfarm/"+R.raw.video1;
         Uri uri = Uri.parse(uriPath);
         videoView.setVideoURI(uri);
@@ -44,19 +43,28 @@ public class VideoPlayer extends Activity {
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);
 
+
+
         videoView.start();
-        videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
 
-
-
-                // invoke your activity here
-
-            }
-        });
 
     }
+    @Override
+    public void onPause()
+    {
+        super.onPause();
+        videoView.pause();
+
+    }
+
+    @Override
+    public void onDestroy()
+    {
+        super.onDestroy();
+        videoView.stopPlayback();
+    }
+
+
 
 
 

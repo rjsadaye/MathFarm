@@ -15,7 +15,8 @@
         tools:overrideLibrary="android.support.v7.appcompat">
         <service
             android:name=".MusicService"
-            android:enabled="true" />
+            android:enabled="true"
+            android:stopWithTask="true"/>
 
         <activity
             android:name=".Home"
@@ -26,8 +27,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".VideoPlayer" />
-        <activity android:name=".VideoPlayer2"></activity>
+        <activity
+            android:name=".VideoPlayer"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Video"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Countingquiz"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Countingoptions"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Shapesoptions"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Shapesquiz"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Plusoptions"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Video2"
+            android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>

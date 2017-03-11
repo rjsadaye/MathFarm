@@ -63,7 +63,7 @@ public class Home extends Activity {
 
     public void sendMessage(View view)
     {
-        Intent intent = new Intent(Home.this, VideoPlayer.class);
+        Intent intent = new Intent(Home.this,Countingoptions.class);
         startActivity(intent);
     }
     @Override
@@ -88,8 +88,12 @@ public class Home extends Activity {
     }
     public void call1(View view)
     {
-        Intent intent = new Intent(Home.this,VideoPlayer2.class);
+        Intent intent=new Intent(Home.this,Shapesoptions.class);
         startActivity(intent);
-
+    }
+    public void call2(View view)
+    {
+        Intent intent=new Intent(Home.this,Plusoptions.class);
+        startActivity(intent);
     }
 }

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="rajsadaye.mathfarm.Plusoptions">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/minion1"
+        android:scaleType="fitXY" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageButton"
+        android:src="@drawable/learnbutton"
+        android:scaleType="fitCenter"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="81dp"
+        android:layout_marginEnd="81dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:clickable="true"
+        android:background="#00ffffff"
+        android:onClick="govid" />
+
+    <ImageButton
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageButton2"
+        android:layout_alignLeft="@+id/imageButton"
+        android:layout_alignStart="@+id/imageButton"
+        android:src="@drawable/practicebutton"
+        android:scaleType="fitXY"
+        android:background="#00ffffff"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignRight="@+id/imageButton"
+        android:layout_alignEnd="@+id/imageButton"
+        android:onClick="goquiz"
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/videobutton"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="govid"
+        android:clickable="true"
+        android:longClickable="false" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView4"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3"
+        android:src="@drawable/questions"
+        android:scaleType="fitXY"
+        android:onClick="goquiz"
+        android:clickable="true" />
+
+
+
+</RelativeLayout>
