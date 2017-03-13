@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="rajsadaye.mathfarm.Countingoptions">
+    tools:context="rajsadaye.mathfarm.Countingoptions"
+    android:background="@drawable/optionback">
 
     <ImageView
         android:layout_width="300dp"
@@ -59,7 +60,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:onClick="sendMessage2"
-        android:clickable="true" />
+        android:clickable="true"
+        android:background="#00ffffff" />
 
     <ImageView
         android:layout_width="80dp"

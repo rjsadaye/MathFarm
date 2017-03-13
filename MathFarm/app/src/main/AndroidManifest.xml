@@ -16,7 +16,11 @@
         <service
             android:name=".MusicService"
             android:enabled="true"
-            android:stopWithTask="true"/>
+            android:stopWithTask="true" />
+        <service
+            android:name=".MusicServicewa"
+            android:enabled="true"
+            android:stopWithTask="true" />
 
         <activity
             android:name=".Home"
@@ -48,8 +52,18 @@
         <activity
             android:name=".Plusoptions"
             android:screenOrientation="landscape" />
-        <activity android:name=".Video2"
-            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".Video2"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Wronganswer"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".CorrectAnswer"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Plusquiz"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>
