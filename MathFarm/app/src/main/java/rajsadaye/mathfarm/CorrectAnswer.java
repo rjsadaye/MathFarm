@@ -37,4 +37,9 @@ public class CorrectAnswer extends Activity {
         }, 3000);
 
     }
+    public void onBackPressed() {
+        // TODO Auto-generated method stub
+        super.onBackPressed();
+        finish();
+    }
 }

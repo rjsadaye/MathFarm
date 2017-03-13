@@ -51,5 +51,10 @@ public class Wronganswer extends Activity {
         finish();
 
     }
+    public void onBackPressed() {
+        // TODO Auto-generated method stub
+        super.onBackPressed();
+        finish();
+    }
 
 }

@@ -131,9 +131,12 @@ public class Home extends Activity {
     @Override
     protected void onRestart() {
 // TODO Auto-generated method stub
-        super.onRestart();
-        mMediaPlayer.start();
 
+        super.onRestart();
+        mMediaPlayer = MediaPlayer.create(this, R.raw.jingle);
+        mMediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+        mMediaPlayer.setLooping(false);
+        mMediaPlayer.start();
         //Do your code here
     }
 
